@@ -1,0 +1,154 @@
+@import url(fonts.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.header {
+    background: #000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0px 12px 0px;
+}
+
+.nav-img {
+    width: 123px;
+    height: 32px;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.nav-list__link {
+    color: #FFF;
+    font-family: "DMR";
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.nav-icons {
+    display: flex;
+    column-gap: 12px;
+}
+
+.nav-icons__icon {
+    background: #FFF;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.header-content {
+    display: flex;
+    padding-left: 77px;
+    justify-content: space-between;
+}
+
+.header-left__title {
+    color: #FFF;
+    font-family: 'AR';
+    font-size: 51px;
+    line-height: 60.614px;
+    padding-top: 168px;
+}
+
+.header-left__text {
+    color: #FFF;
+    font-family: 'IR';
+    font-size: 16px;
+    line-height: 25.6px;
+    max-width: 340px;
+    width: 100%;
+    padding-top: 60px;
+    margin-bottom: 120px;
+}
+
+.header-right__foto {
+    max-width: 100%;
+}
+
+.header-left__btn {
+    color: #000;
+    text-align: center;
+    font-family: 'DMR';
+    font-size: 16px;
+    line-height: 16px;
+    background: #8DFD1B;
+    padding: 17px 40px 27px 40px;
+    max-width: 100%;
+}
+
+
+
+
+@media (max-width: 660px) {
+    .nav {
+        flex-wrap: wrap;
+        padding-left: 30px;
+        justify-content: center;
+    }
+
+    .nav-icons {
+        padding-top: 20px;
+    }
+
+}
+
+@media (max-width: 495px) {
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+}
+
+@media (max-width: 1500px) {
+    .header-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-right__foto {
+        row-gap: 35px;
+    } 
+}
+
+@media (max-width: 1500px) {
+    .header-content {
+        flex-wrap: wrap;
+    }
+
+    .header-right__foto {
+        row-gap: 35px;
+    } 
+}
+
+
+@media (max-width: 510px) {
+    .header-left__title {
+        font-size: 31px;
+    }
+
+    .header-right__foto {
+        padding: 40px;
+    }
+}
